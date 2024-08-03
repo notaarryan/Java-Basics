@@ -1,4 +1,10 @@
 //after each case in switch remember to break using break; or else all the statements will be executed
+//this file contains
+// 1.switch syntax
+// 2.removing duplication in switch
+// 3.arrow labels in switch
+
+
 import java.util.*;
 
 public class Switch {
@@ -70,6 +76,16 @@ public class Switch {
                 season = "Spring";
                 break;
         }
+
+        //arrow labels in switch statement
+        //they do not require break but the statements executed can only be one liners
+        switch (monthNumber) {
+            case 1,2,3,4 -> season = "Winter";
+            case 5,6,7,8 -> season = "Summer";
+            case 9,10,11,12 -> season = "Spring";
+        }
+
+
         return season;
     }
 
