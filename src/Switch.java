@@ -3,13 +3,14 @@
 // 1.switch syntax
 // 2.removing duplication in switch
 // 3.arrow labels in switch
+//4.switch expression
 
 
 import java.util.*;
 
 public class Switch {
     static String getSeason (int monthNumber) {
-        String season = "";
+        String season = " ";
         switch (monthNumber) {
             case 1:
                 System.out.println("Season is Winter");
@@ -78,7 +79,7 @@ public class Switch {
         }
 
         //arrow labels in switch statement
-        //they do not require break but the statements executed can only be one liners
+        //they do not require break but the statements executed can only be one line expression
         switch (monthNumber) {
             case 1,2,3,4 -> season = "Winter";
             case 5,6,7,8 -> season = "Summer";
@@ -101,6 +102,15 @@ public class Switch {
                 season = "Spring";
             }
         }
+
+        //switch expression
+        season = switch (monthNumber) {
+            case 1, 2, 3, 4 -> season = "Winter";
+            case 5, 6, 7, 8 -> season = "Summer";
+            case 9, 10, 11, 12 -> season = "Spring";
+            default -> season=null;
+        };
+
 
         return season;
     }
