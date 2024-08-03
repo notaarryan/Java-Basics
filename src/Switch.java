@@ -85,6 +85,22 @@ public class Switch {
             case 9,10,11,12 -> season = "Spring";
         }
 
+        //to have multiple statements in an arrow label you have to create a block
+
+        switch (monthNumber) {
+            case 1,2,3,4 -> {
+                System.out.println("Season is Winter");
+                season = "Winter";
+            }
+            case 5,6,7,8 -> {
+                System.out.println("Season is Summer");
+                season = "Summer";
+            }
+            case 9,10,11,12 -> {
+                System.out.println("Season is Spring");
+                season = "Spring";
+            }
+        }
 
         return season;
     }
