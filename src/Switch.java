@@ -111,6 +111,15 @@ public class Switch {
             default -> season=null;
         };
 
+        //you can also use switch expression directly with return statements
+        /*
+         return switch (monthNumber) {
+            case 1, 2, 3, 4 -> season = "Winter";
+            case 5, 6, 7, 8 -> season = "Summer";
+            case 9, 10, 11, 12 -> season = "Spring";
+            default -> season=null;
+            */
+
 
         return season;
     }
