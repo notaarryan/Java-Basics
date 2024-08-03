@@ -54,6 +54,22 @@ public class Switch {
                 season = "Spring";
                 break;
         }
+
+        //can use comma separated values to remove duplication
+        switch (monthNumber) {
+            case 1,2,3,4:
+                System.out.println("Season is Winter");
+                season = "Winter";
+                break;
+            case 5,6,7,8:
+                System.out.println("Season is Summer");
+                season = "Summer";
+                break;
+            case 9,10,11,12:
+                System.out.println("Season is Spring");
+                season = "Spring";
+                break;
+        }
         return season;
     }
 
