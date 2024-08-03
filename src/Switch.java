@@ -4,6 +4,7 @@
 // 2.removing duplication in switch
 // 3.arrow labels in switch
 //4.switch expression
+//5.yield
 
 
 import java.util.*;
@@ -109,6 +110,24 @@ public class Switch {
             case 5, 6, 7, 8 -> season = "Summer";
             case 9, 10, 11, 12 -> season = "Spring";
             default -> season=null;
+        };
+
+        //yield in switch expression
+        //yield has to be last in switch expression
+        season = switch (monthNumber) {
+            case 1, 2, 3, 4 -> {
+                System.out.println("Season is Winter");
+                yield "Winter";
+            }
+            case 5, 6, 7, 8 -> {
+                System.out.println("Season is Summer");
+                yield "Summer";
+            }
+            case 9, 10, 11, 12 -> {
+                System.out.println("Season is Spring");
+                yield "Spring";
+            }
+            default -> season;
         };
 
         //you can also use switch expression directly with return statements
