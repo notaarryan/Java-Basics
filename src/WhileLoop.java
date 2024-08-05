@@ -1,9 +1,9 @@
 //this file contains the basic syntax of while loop
 //the work done with while loop can be done with for loop and vice versa
-//prefer a for loop over while loop because the variable initialized for while loop in the block of method will have a scope till the end of the method
+//prefer a for loop over while loop if the task can be done with both because the variable initialized for while loop in the block of method will have a scope till the end of the method
 //while in for-loop the scope variable used for initializing for loop has a local scope within the loop
 //for(initialization;condition;increment/decrement/other expressions);
-
+//prefer while when you only need a condition statement or when you want to create an infinite loop
 
 public class WhileLoop {
     static void reverseArray(int[] array) {
