@@ -1,6 +1,6 @@
 # JavaBasics
 
-Welcome to the **JavaBasics** repository! This project is an introductory guide to Java programming, designed to help beginners grasp the fundamental concepts and features of the language.
+Welcome to the **Java-Basics** repository! This project is an introductory guide to Java programming, designed to help beginners grasp the fundamental concepts and features of the language.
 
 ## Table of Contents
 
@@ -31,13 +31,13 @@ To get started with the JavaBasics project, follow these steps:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/JavaBasics.git
+   git clone https://github.com/notaarryan/Java-Basics.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```sh
-   cd JavaBasics
+   cd Java-Basics
    ```
 
 3. **Open the project in your favorite IDE or text editor.**
