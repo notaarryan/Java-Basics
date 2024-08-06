@@ -28,6 +28,7 @@ public class Continue {
         outerLoop : for (double[] scores : studentScores) {
              for (double score : scores) {
                 if (score == -1) {
+                    count++;
                     continue outerLoop;
                 }
 
@@ -35,7 +36,7 @@ public class Continue {
             }
 
              average = sum/scores.length;
-             studentAverage[count] = average;
+             studentAverage[count++] = average;
         }
         return studentAverage;
     }
