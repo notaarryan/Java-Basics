@@ -3,7 +3,9 @@
 //here we will use an array which is already in ascending order
 //in binary search we find mid-point and check if the element is at the mid-point or not
 //if not we check if the number is greater than or less than the mid-point if its greater we ignore the lower numbers and call the method again passing new keys and vice versa
-//this continues until we find the index of the element
+//this continues until we find the index of the element or till the lower index and the higher index becomes equal
+//if that's the case we check if the element is present at either lower or higher index doesn't matter as they are th same
+//if the element is not present then we return -1 as it is not present in the array
 
 public class BinarySearch {
     static int binarySearch (int[] array , int lower, int higher,int key) {
