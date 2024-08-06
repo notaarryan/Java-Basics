@@ -6,6 +6,7 @@
 //this continues until we find the index of the element or till the lower index and the higher index becomes equal
 //if that's the case we check if the element is present at either lower or higher index doesn't matter as they are th same
 //if the element is not present then we return -1 as it is not present in the array
+//also if lower > higher we return -1
 
 public class BinarySearch {
     static int binarySearch (int[] array , int lower, int higher,int key) {
@@ -15,6 +16,8 @@ public class BinarySearch {
             } else {
                 return -1; //element not in array
             }
+        } else if (lower > higher) {
+            return -1;
         }
 
         int mid = (lower+higher)/2;
