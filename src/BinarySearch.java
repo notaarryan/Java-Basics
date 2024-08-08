@@ -32,7 +32,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] array = {11,19,24,34,55,65,71,83,91};
+        int[] array = {12,19,24,34,55,65,71,83,91};
         int index = binarySearch(array,0,8,65);
         System.out.println("Index: " + index);
     }
