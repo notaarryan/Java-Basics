@@ -13,5 +13,9 @@ public class Package {
     public void print() {
         System.out.println("Inside package");
     }
+
+    public static void main(String[] args) {
+        System.out.println();
+    }
 }
 

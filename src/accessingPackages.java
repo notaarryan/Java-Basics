@@ -19,6 +19,16 @@ import java.util.ArrayList;
 //accessing our own package in java
 import javapackage.Package;
 
+
+//to access a package created in a directory form other directory
+//1. compile the package class
+//2. copy the path reference to the file that contains package
+//3. open terminal in the directory you want to access package in
+//4. set path using respective commands
+//for mac: export CLASSPATH = path to src file containing the package
+//for windows: set CLASSPATH = path to src file containing the package
+//5. run the file in terminal
+
 public class accessingPackages {
     public static void main(String[] args) {
         //this is a fully qualified class name
