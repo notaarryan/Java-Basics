@@ -16,10 +16,16 @@ import java.io.*;
 //this is an explicit import
 import java.util.ArrayList;
 
+//accessing our own package in java
+import javapackage.Package;
+
 public class accessingPackages {
     public static void main(String[] args) {
         //this is a fully qualified class name
         //always prefer import statement over fully qualified class name until necessary
         java.sql.Date date = new java.sql.Date(2007,12,25);
+
+        Package p = new Package();
+        p.print();
     }
 }
