@@ -27,28 +27,28 @@ public class string {
         String s = "hello world";
 
         //returns length of string
-        System.out.println("s.length()" + s.length());
+        System.out.println("s.length(): " + s.length());
 
         //returns true if string is empty and false if not
-        System.out.println("s.isEmpty()" + s.isEmpty());
+        System.out.println("s.isEmpty(): " + s.isEmpty());
 
         //returns true if string passed in as argument is equal to the string
-        System.out.println("s.equals(\"hello world!\"" + s.equals("Hello world"));
+        System.out.println("s.equals(\"hello world!\": " + s.equals("Hello world"));
 
         //same as equals() but ignores case sensitivity
-        System.out.println("s.equals(\"hello world!\""+s.equalsIgnoreCase("HELLO WORLD"));
+        System.out.println("s.equals(\"hello world!\": "+s.equalsIgnoreCase("HELLO WORLD"));
 
         //returns true if the string contains the string passed in as argument
-        System.out.println("s.contains(\"hello\"" + s.contains("hello"));
+        System.out.println("s.contains(\"hello\": " + s.contains("hello"));
 
         //returns true if the string starts with the string passed in as argument
-        System.out.println("s.startsWith(\"hello\"" + s.startsWith("hello"));
+        System.out.println("s.startsWith(\"hello\": " + s.startsWith("hello"));
 
         //returns true if the string ends with the string passed in as argument
-        System.out.println("s.endsWith(\"hello\"" + s.endsWith("rld"));
+        System.out.println("s.endsWith(\"hello\": " + s.endsWith("rld"));
 
         //returns index of the string passed in as argument at its first occurrence
-        System.out.println("s.indexOf(\"o\"" + s.indexOf("o"));
+        System.out.println("s.indexOf(\"o\": " + s.indexOf("o"));
 
         //returns index of the string passed in as argument at its last occurrence
         System.out.println("s.lastIndexOf(\"o\": " + s.lastIndexOf("o"));
