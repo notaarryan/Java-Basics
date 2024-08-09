@@ -12,7 +12,7 @@ public class ConstructorOverloading {
     char degree;
 
     boolean international;
-    double tutionFee = 12000.0;
+    double tuitionFee = 12000.0;
     double internationalFee = 5000.0;
 
     ConstructorOverloading(int id, String name, String gender, int age, long phone, double gpa, char degree, boolean international){
@@ -27,7 +27,7 @@ public class ConstructorOverloading {
         this.international = international;
 
         if (international) {
-            tutionFee = tutionFee+internationalFee;
+            tuitionFee = tuitionFee +internationalFee;
         }
 
         System.out.println("Id: "+id);
@@ -37,7 +37,7 @@ public class ConstructorOverloading {
         System.out.println("phone: "+phone);
         System.out.println("gpa: "+gpa);
         System.out.println("degree: "+degree);
-        System.out.println("tutionFee: "+tutionFee);
+        System.out.println("tutionFee: "+ tuitionFee);
     }
 
     ConstructorOverloading(int id, String name, String gender, int age, long phone, double gpa, char degree){
