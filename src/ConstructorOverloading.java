@@ -15,16 +15,16 @@ public class ConstructorOverloading {
     double tutionFee = 12000.0;
     double internationalFee = 5000.0;
 
-    ConstructorOverloading(int newid, String newName, String newGender, int newAge, long newPhone, double newGpa, char newDegree, boolean isInternational){
+    ConstructorOverloading(int id, String name, String gender, int age, long phone, double gpa, char degree, boolean international){
         System.out.println("\nInside Constructor_1\n");
-        id = newid;
-        name = newName;
-        gender = newGender;
-        age = newAge;
-        phone = newPhone;
-        gpa = newGpa;
-        degree = newDegree;
-        international = isInternational;
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.phone = phone;
+        this.gpa = gpa;
+        this.degree = degree;
+        this.international = international;
 
         if (international) {
             tutionFee = tutionFee+internationalFee;
@@ -40,24 +40,8 @@ public class ConstructorOverloading {
         System.out.println("tutionFee: "+tutionFee);
     }
 
-    ConstructorOverloading(int newid, String newName, String newGender, int newAge, long newPhone, double newGpa, char newDegree){
-        System.out.println("\nInside Constructor_2\n");
-        id = newid;
-        name = newName;
-        gender = newGender;
-        age = newAge;
-        phone = newPhone;
-        gpa = newGpa;
-        degree = newDegree;
-
-        System.out.println("Id: "+id);
-        System.out.println("Name: "+name);
-        System.out.println("gender: "+gender);
-        System.out.println("age: "+age);
-        System.out.println("phone: "+phone);
-        System.out.println("gpa: "+gpa);
-        System.out.println("degree: "+degree);
-        System.out.println("tutionFee: "+tutionFee);
+    ConstructorOverloading(int id, String name, String gender, int age, long phone, double gpa, char degree){
+        this(id,name,gender,age,phone,gpa,degree,false);
     }
 
 
