@@ -73,5 +73,11 @@ public class string {
         //returns a copy of string with all instances of target replaced with replacement
         //replace(target,replacement)
         System.out.println(s.replace("o","r"));
+
+        //returns an array of strings split at all instances of the string passed in as argument
+        String[] sArray = s.split("o");
+        for (String i : sArray) {
+            System.out.println(i);
+        }
     }
 }
