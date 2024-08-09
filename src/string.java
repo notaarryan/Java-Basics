@@ -51,15 +51,18 @@ public class string {
         System.out.println("s.indexOf(\"o\"" + s.indexOf("o"));
 
         //returns index of the string passed in as argument at its last occurrence
-        System.out.println("s.lastIndexOf(\"o\"" + s.lastIndexOf("o"));
+        System.out.println("s.lastIndexOf(\"o\": " + s.lastIndexOf("o"));
 
         //returns character at the specified index in of the string
-        System.out.println("s.charAt(4)"+ s.charAt(4));
+        System.out.println("s.charAt(4): "+ s.charAt(4));
 
         //returns a substring from the string according to the starting and ending indexes passed
         //if end index is not given it returns everything till end of the string
         //end index is not included if specified
-        System.out.println("s.substring(4)"+s.substring(4));
-        System.out.println("s.substring(4,9)"+s.substring(4,9));
+        System.out.println("s.substring(4): "+s.substring(4));
+        System.out.println("s.substring(4,9): "+s.substring(4,9));
+
+        //returns a copy of string converted to uppercase or lowercase
+        System.out.println("s.toLowerCase: "+s.toLowerCase());
     }
 }
