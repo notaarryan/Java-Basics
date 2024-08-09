@@ -64,5 +64,14 @@ public class string {
 
         //returns a copy of string converted to uppercase or lowercase
         System.out.println("s.toLowerCase: "+s.toLowerCase());
+        System.out.println("s.toUpperCase: "+s.toUpperCase());
+
+        //returns a copy of string with leading and trailing whitespaces removed
+        String s1 = "    hello    ";
+        System.out.println("s.trim(): "+s.trim());
+
+        //returns a copy of string with all instances of target replaced with replacement
+        //replace(target,replacement)
+        System.out.println(s.replace("o","r"));
     }
 }
