@@ -41,6 +41,18 @@ public class string {
         //returns true if the string contains the string passed in as argument
         System.out.println("s.contains(\"hello\"" + s.contains("hello"));
 
+        //returns true if the string starts with the string passed in as argument
+        System.out.println("s.startsWith(\"hello\"" + s.startsWith("hello"));
+
+        //returns true if the string ends with the string passed in as argument
+        System.out.println("s.endsWith(\"hello\"" + s.endsWith("rld"));
+
+        //returns index of the string passed in as argument at its first occurrence
+        System.out.println("s.indexOf(\"o\"" + s.indexOf("o"));
+
+        //returns index of the string passed in as argument at its last occurrence
+        System.out.println("s.lastIndexOf(\"o\"" + s.lastIndexOf("o"));
+
 
     }
 }
