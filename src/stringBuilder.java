@@ -44,7 +44,7 @@ public class stringBuilder {
         sb.replace(2,7," ");
         s = sb.toString();
         System.out.println(s);
-
+        System.out.println(sb.length());
     }
 
     public static void main(String[] args) {
