@@ -22,8 +22,34 @@ public class stringBuilder {
         String s = sb.toString();
         System.out.println(s);
     }
+
+    static void builder3() {
+        String s = "Hello";
+        StringBuilder sb = new StringBuilder(s);
+        sb.append(" world hello world");
+        s = sb.toString();
+        System.out.println(s);
+        sb.delete(1,5);
+        s = sb.toString();
+        System.out.println(s);
+        sb.insert(2,"HELLO");
+        s = sb.toString();
+        System.out.println(s);
+        sb.reverse();
+        s = sb.toString();
+        System.out.println(s);
+        sb.reverse();
+        s = sb.toString();
+        System.out.println(s);
+        sb.replace(2,7," ");
+        s = sb.toString();
+        System.out.println(s);
+
+    }
+
     public static void main(String[] args) {
         builder1();
         builder2();
+        builder3();
     }
 }
