@@ -1,6 +1,9 @@
 //while string class is immutable
 //StringBuilder is mutable
 //it has methods like:append,length,delete,insert,reverse,replace
+//There is a similar class to StringBuilder called StringBuffer,
+//but it is out of date
+//StringBuilder is non-Synchronised~faster while StringBuffer is Synchronised~slow
 
 import java.lang.StringBuilder;
 
