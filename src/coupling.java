@@ -7,8 +7,6 @@
 //also known as getter-setter methods
 
 
-import java.util.Objects;
-
 public class coupling {
     private String gender;
 
