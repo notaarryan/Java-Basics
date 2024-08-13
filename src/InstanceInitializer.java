@@ -2,6 +2,7 @@
 //why use instance initializers if we have constructors?
 //Instance initializers are copied to the beginning of all constructor
 //so if we want to share code among all constructors we use instance initializers
+//if a constructor has this() invocation the Instance Initializer is not copied there
 
 
 public class InstanceInitializer {
@@ -18,7 +19,7 @@ public class InstanceInitializer {
     }
 
     public static void main(String[] args) {
-        InstanceInitializer ii = new InstanceInitializer();
-        InstanceInitializer ii1 = new InstanceInitializer("aryan");
+        new InstanceInitializer();
+        new InstanceInitializer("aryan");
     }
 }
