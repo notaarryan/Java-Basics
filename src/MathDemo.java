@@ -67,5 +67,7 @@ public class MathDemo {
 
         //Math.log(double a) -> returns log to the base of e
         //Math.log10(double a) -> returns log to the base of 10
+
+        //there are many more methods these are some imp ones
     }
 }
