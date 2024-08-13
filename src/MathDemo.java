@@ -25,5 +25,21 @@ public class MathDemo {
 
         long round2 = Math.round(2.0);
         System.out.println(round2);
+
+        //2.Math.ceil(double a) -> returns a double rounded of to a higher or equal to value
+
+        double ceil1 = Math.ceil(24.01);
+        System.out.println(ceil1);
+
+        double ceil2 = Math.ceil(24.0);
+        System.out.println(ceil2);
+
+        //3.Math.floor(double a) -> returns a double rounded of to a lower or equal to value
+
+        double floor1 = Math.floor(24.39);
+        System.out.println(floor1);
+
+        double floor2 = Math.floor(23.0);
+        System.out.println(floor2);
     }
 }
