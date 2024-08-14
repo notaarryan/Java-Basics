@@ -1,6 +1,9 @@
 //boxed primitives is a class of java.lang package
 //each box primitive wraps / boxes a primitive value
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class BoxedPrimitives {
     {
         Integer boxedInt = Integer.valueOf(8);
@@ -38,6 +41,24 @@ public class BoxedPrimitives {
 
         System.out.println(id);
         System.out.println(marks);
+    }
+
+    static void utilityMethods() {
+
+        int[] arr = {1,2,3,4};
+        int i = 12;
+        char c = 'm';
+
+        boolean isDigit = Character.isDigit(i);
+        boolean isLetter = Character.isDigit(c);
+        boolean isLetterOrDigit = Character.isLetterOrDigit(i);
+        boolean isUpperCase = Character.isUpperCase(c);
+
+        String strI = Integer.toString(i);
+        String strA = Arrays.toString(arr);
+
+        System.out.println(strI);
+        System.out.println(strA);
     }
 
 
