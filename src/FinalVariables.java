@@ -16,8 +16,11 @@
 //Static Instance Variable
 //constant for all instances of the class
 
-//
-
+//constant variables are final variables whose values are known at compile time
+//all constant variables are final variables but not all final variables are constant variables
+//for a final variable to be a constant variable:
+//1.It must be a primitive or a String
+//2.It must be initialized in declaration statement with a constant expression
 
 public class FinalVariables {
 }
