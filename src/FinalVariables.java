@@ -23,4 +23,26 @@
 //2.It must be initialized in declaration statement with a constant expression
 
 public class FinalVariables {
+    //this is a static final variable
+    static final int id;
+    static {
+        id = 20;
+    }
+
+    //this is an instance final variable
+    final int id1;
+
+    FinalVariables() {
+        this.id1 = 123;
+    }
+
+    //this is a constant variable
+    final int id2 = 123;
+
+    public static void main(String[] args) {
+        for (int i = 10;i>0;i--) {
+            //this is a final local variable
+            final int id = 100;
+        }
+    }
 }
