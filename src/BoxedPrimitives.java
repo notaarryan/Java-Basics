@@ -1,7 +1,7 @@
 //boxed primitives is a class of java.lang package
 //each box primitive wraps / boxes a primitive value
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BoxedPrimitives {
@@ -61,5 +61,16 @@ public class BoxedPrimitives {
         System.out.println(strA);
     }
 
+    //BoxedPrimitives can also be used to populate data structures like ArrayLists
+    static void arrayList() {
+        ArrayList al = new ArrayList();
+        al.add(Integer.valueOf(8));
+        al.add(Character.valueOf('c'));
+        System.out.println(al.toString());
+    }
+
+    public static void main(String[] args) {
+        arrayList();
+    }
 
 }
